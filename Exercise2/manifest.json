@@ -1,13 +1,17 @@
 {
 	"manifest_version": 2,
-	"name": "hello world",
-	"description": "Hello world",
-	"version": "1.0",
+	"name": "Twitter Social Toolkit",
+	"description": "Allow you to share text, content, links, page, etc. to your twitter account.",
+    "version": "1.0",
 	"background": {
-		"script": ["background.js"],
-		"persistent": false
+        "scripts": ["JS/background.js"],
+        "persistence":false
     },
     "icons":{
-        "64":"icon.png"
-    }
+        "64":"icon.png",
+        "32":"icon.png",
+        "16":"icon.png",
+        "128":"icon.png"
+    },
+    "permissions":["contextMenus"]
 }
