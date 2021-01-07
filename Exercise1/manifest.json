@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "example",
+	"description": "tutorial",
+	"version": "0.1",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "index.html"
+	},
+	"background": {
+		"scripts": ["JS/background.js"]
+	},
+	"chrome_url_overrides": {
+		"newtab": "HTML/newtab.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://*/*"],
+			"css": ["CSS/style.css"],
+			"js": ["JS/script.js"]
+		}
+	],
+	"web_accessible_resources": ["HTML/toolbar.html", "CSS/style.css"]
+}
