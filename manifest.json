@@ -1,0 +1,15 @@
+{
+	"manisfest_version": 0,
+	"name": "example",
+	"description": "tutorial",
+	"version": "0.1",
+	"browser_action": {
+		"default_icon": "icon.jpeg",
+		"default_popup": "index.html"
+    },
+    "permissions":[
+        "activeTab",
+        "https://ajax.googleapis.com"
+    ]
+    
+}
