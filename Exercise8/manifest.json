@@ -1,0 +1,13 @@
+{
+    "manifest_version":2,
+    "name":"Send data to server",
+    "description":"Send data to server",
+    "browser_action":{
+        "defualt_title":"Hello!",
+        "default_popup":"pop.html"
+    },
+    "version":"1",
+    "permissions":[
+        "http://localhost/*"
+    ]
+}
